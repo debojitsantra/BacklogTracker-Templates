@@ -1,4 +1,4 @@
-# Backlog Tracker Template Store
+# Backlog Tracker Templates
 
 Public JSON template store for Backlog Tracker.
 
