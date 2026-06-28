@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "IELTS / TOEFL / GRE Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Vocabulary Building": {
+      "emoji": "📖",
+      "color": "#4fc3f7",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 15
+    },
+    "Reading Practice": {
+      "emoji": "📰",
+      "color": "#81c784",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Listening Practice": {
+      "emoji": "🎧",
+      "color": "#ba68c8",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "mon",
+        "wed",
+        "fri"
+      ]
+    },
+    "Writing Task Practice": {
+      "emoji": "✍️",
+      "color": "#ffd54f",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "tue",
+        "thu"
+      ]
+    },
+    "Speaking Mock": {
+      "emoji": "🗣️",
+      "color": "#ff8a65",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Full Mock Test": {
+      "emoji": "📝",
+      "color": "#e57373",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sun"
+      ]
+    }
+  },
+  "theme": "dark"
+}

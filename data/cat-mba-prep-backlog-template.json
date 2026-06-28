@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "CAT / MBA Prep Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Quantitative Ability": {
+      "emoji": "🧮",
+      "color": "#4fc3f7",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Verbal Ability & Reading Comp": {
+      "emoji": "📖",
+      "color": "#81c784",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Data Interpretation & Logical Reasoning": {
+      "emoji": "📊",
+      "color": "#ba68c8",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Mock CAT": {
+      "emoji": "📝",
+      "color": "#ffd54f",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sun"
+      ]
+    },
+    "Mock Analysis": {
+      "emoji": "🔎",
+      "color": "#e57373",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "GK / Current Affairs (for GD-PI)": {
+      "emoji": "📰",
+      "color": "#ff8a65",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "mon",
+        "wed",
+        "fri"
+      ]
+    }
+  },
+  "theme": "dark"
+}

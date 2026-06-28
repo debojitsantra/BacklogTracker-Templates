@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "Pet Care Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Feeding": {
+      "emoji": "🍖",
+      "color": "#ff8a65",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 2,
+      "repeat_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ]
+    },
+    "Walks / Exercise": {
+      "emoji": "🐾",
+      "color": "#81c784",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ]
+    },
+    "Grooming": {
+      "emoji": "✂️",
+      "color": "#ba68c8",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Vet Visits": {
+      "emoji": "🩺",
+      "color": "#4fc3f7",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Supplies Restock": {
+      "emoji": "🛒",
+      "color": "#ffd54f",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    }
+  },
+  "theme": "dark"
+}
