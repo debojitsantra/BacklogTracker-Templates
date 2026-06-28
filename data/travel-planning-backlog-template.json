@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "Travel Planning Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Destination Wishlist": {
+      "emoji": "🗺️",
+      "color": "#4fc3f7",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Itinerary Planning": {
+      "emoji": "🧭",
+      "color": "#ba68c8",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Packing Checklist": {
+      "emoji": "🎒",
+      "color": "#81c784",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Bookings (Tickets/Stay)": {
+      "emoji": "🎫",
+      "color": "#ffd54f",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Budget Tracking": {
+      "emoji": "💰",
+      "color": "#ff8a65",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    }
+  },
+  "theme": "dark"
+}

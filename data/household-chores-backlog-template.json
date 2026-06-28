@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "Household Chores Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Room Cleaning": {
+      "emoji": "🧹",
+      "color": "#4fc3f7",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sun",
+        "wed"
+      ]
+    },
+    "Laundry": {
+      "emoji": "🧺",
+      "color": "#81c784",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "tue",
+        "sat"
+      ]
+    },
+    "Grocery Run": {
+      "emoji": "🛒",
+      "color": "#ffd54f",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sun"
+      ]
+    },
+    "Dishes": {
+      "emoji": "🍽️",
+      "color": "#ba68c8",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ]
+    },
+    "Repairs / Maintenance": {
+      "emoji": "🔧",
+      "color": "#ff8a65",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    }
+  },
+  "theme": "dark"
+}
