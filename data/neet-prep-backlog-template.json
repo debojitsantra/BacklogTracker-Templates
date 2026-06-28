@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "NEET Prep Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Botany": {
+      "emoji": "🌿",
+      "color": "#81c784",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Zoology": {
+      "emoji": "🐸",
+      "color": "#4caf50",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Physics": {
+      "emoji": "⚛️",
+      "color": "#ff8a65",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Chemistry": {
+      "emoji": "🧪",
+      "color": "#ba68c8",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "NCERT Line-by-Line": {
+      "emoji": "📘",
+      "color": "#4fc3f7",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Weekly Mock Test": {
+      "emoji": "📝",
+      "color": "#ffd54f",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sun"
+      ]
+    },
+    "Previous Year Questions": {
+      "emoji": "📋",
+      "color": "#e57373",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    }
+  },
+  "theme": "dark"
+}
