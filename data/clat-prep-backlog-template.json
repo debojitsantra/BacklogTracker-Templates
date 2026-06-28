@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "CLAT Prep Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "English & Reading Comp": {
+      "emoji": "📖",
+      "color": "#4fc3f7",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Legal Reasoning": {
+      "emoji": "⚖️",
+      "color": "#ba68c8",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Logical Reasoning": {
+      "emoji": "🧠",
+      "color": "#81c784",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "General Knowledge / Current Affairs": {
+      "emoji": "📰",
+      "color": "#ffd54f",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "mon",
+        "wed",
+        "fri"
+      ]
+    },
+    "Quantitative Techniques": {
+      "emoji": "🧮",
+      "color": "#ff8a65",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Weekly Mock Test": {
+      "emoji": "📝",
+      "color": "#e57373",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sun"
+      ]
+    }
+  },
+  "theme": "dark"
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "UPSC CSE Prep Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "GS Paper 1": {
+      "emoji": "🏛️",
+      "color": "#ff8a65",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "GS Paper 2 (Polity/IR)": {
+      "emoji": "⚖️",
+      "color": "#4fc3f7",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "GS Paper 3 (Eco/Sci/Env)": {
+      "emoji": "🌍",
+      "color": "#81c784",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "GS Paper 4 (Ethics)": {
+      "emoji": "🧭",
+      "color": "#ba68c8",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Daily Current Affairs": {
+      "emoji": "📰",
+      "color": "#ffd54f",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ]
+    },
+    "Answer Writing Practice": {
+      "emoji": "✍️",
+      "color": "#e57373",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "tue",
+        "fri"
+      ]
+    },
+    "CSAT Practice": {
+      "emoji": "🧠",
+      "color": "#9575cd",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Essay Drafts": {
+      "emoji": "📄",
+      "color": "#7e57c2",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    }
+  },
+  "theme": "dark"
+}

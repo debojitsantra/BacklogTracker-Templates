@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "GATE Prep Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Core Subject 1": {
+      "emoji": "⚙️",
+      "color": "#4fc3f7",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Core Subject 2": {
+      "emoji": "🔧",
+      "color": "#ba68c8",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Engineering Mathematics": {
+      "emoji": "🧮",
+      "color": "#81c784",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "General Aptitude": {
+      "emoji": "🧠",
+      "color": "#ffd54f",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Previous Year Papers": {
+      "emoji": "📋",
+      "color": "#ff8a65",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Weekly Mock Test": {
+      "emoji": "📝",
+      "color": "#e57373",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sun"
+      ]
+    }
+  },
+  "theme": "dark"
+}

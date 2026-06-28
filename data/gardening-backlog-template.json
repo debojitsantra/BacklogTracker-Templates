@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "Gardening Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Watering": {
+      "emoji": "💧",
+      "color": "#4fc3f7",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "mon",
+        "wed",
+        "fri",
+        "sun"
+      ]
+    },
+    "Pruning / Trimming": {
+      "emoji": "✂️",
+      "color": "#81c784",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Fertilizing": {
+      "emoji": "🌱",
+      "color": "#ba68c8",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sun"
+      ]
+    },
+    "New Plants to Add": {
+      "emoji": "🪴",
+      "color": "#ffd54f",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Pest Check": {
+      "emoji": "🐛",
+      "color": "#ff8a65",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sat"
+      ]
+    }
+  },
+  "theme": "dark"
+}
