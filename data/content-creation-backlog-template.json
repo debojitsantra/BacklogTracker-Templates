@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "Content Creation Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Video Ideas": {
+      "emoji": "💡",
+      "color": "#ffd54f",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Scripts to Write": {
+      "emoji": "📝",
+      "color": "#4fc3f7",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Footage to Edit": {
+      "emoji": "🎬",
+      "color": "#ff8a65",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Thumbnails": {
+      "emoji": "🖼️",
+      "color": "#ba68c8",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Upload Day": {
+      "emoji": "📤",
+      "color": "#81c784",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "wed",
+        "sat"
+      ]
+    },
+    "Comments to Reply": {
+      "emoji": "💬",
+      "color": "#9575cd",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    }
+  },
+  "theme": "dark"
+}

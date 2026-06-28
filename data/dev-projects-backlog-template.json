@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "exportType": "course_design",
+  "title": "Dev Projects Backlog",
+  "description": "Shared Backlog Tracker template",
+  "items": {
+    "Feature Backlog": {
+      "emoji": "🧩",
+      "color": "#4fc3f7",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Bug Fixes": {
+      "emoji": "🐛",
+      "color": "#ff8a65",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Code Review": {
+      "emoji": "🔍",
+      "color": "#81c784",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "F-Droid / Store Compliance": {
+      "emoji": "🏷️",
+      "color": "#ba68c8",
+      "growth_mode": "none",
+      "completion_mode": "todo"
+    },
+    "Docs to Write": {
+      "emoji": "📄",
+      "color": "#ffd54f",
+      "growth_mode": "perday",
+      "completion_mode": "backlog",
+      "perday": 1
+    },
+    "Weekly Repo Maintenance": {
+      "emoji": "🛠️",
+      "color": "#9575cd",
+      "growth_mode": "repeat",
+      "completion_mode": "backlog",
+      "perday": 1,
+      "repeat_days": [
+        "sun"
+      ]
+    }
+  },
+  "theme": "dark"
+}
