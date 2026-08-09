@@ -4,8 +4,8 @@ Public template repository for [Backlog Tracker](https://github.com/debojitsantr
 
 ## Browse templates
 
-- **[`index.html`](./index.html)** (with search)
-- **[`data.md`](./data.md)** (static)
+- **[`index.html`](https://debojitsantra.github.io/BacklogTracker-Templates/)** (with search)
+- **[`data.md`](./DATA.md)** (static)
 
 ## Adding a template
  
