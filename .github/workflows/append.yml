@@ -1,4 +1,4 @@
-name: Update data.md
+name: Update DATA.md
 
 on:
   push:
@@ -19,17 +19,17 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Append new templates to data.md
+      - name: Append new templates to DATA.md
         run: python3 scripts/append.py
 
       - name: Commit changes
         run: |
-          if git diff --quiet -- data.md; then
-            echo "No changes to data.md"
+          if git diff --quiet -- DATA.md; then
+            echo "No changes to DATA.md"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.md
-          git commit -m "chore: append new template(s) to data.md"
+          git add DATA.md
+          git commit -m "chore: append new template(s) to DATA.md"
           git push
