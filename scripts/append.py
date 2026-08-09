@@ -9,7 +9,7 @@ from pathlib import Path
 
 #configs
 DATA_DIR = Path("data")
-OUTPUT_FILE = Path("data.md")
+OUTPUT_FILE = Path("DATA.md")
 GITHUB_OWNER = "debojitsantra"
 GITHUB_REPO = "BacklogTracker-Templates"
 GITHUB_BRANCH = "main"
