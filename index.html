@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Backlog Tracker — Templates</title>
+<meta name="description" content="Search Backlog Tracker templates, fetched live from GitHub." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #14171f;
+    --ink-soft: #1c2029;
+    --paper: #f2ead9;
+    --paper-dim: #e7dcc3;
+    --ochre: #c9862c;
+    --ochre-dim: #97641f;
+    --teal: #3f7d6b;
+    --line: #3a3f4d;
+    --text-on-dark: #ece6d6;
+    --text-dim: #9aa0ad;
+    --danger: #b5533f;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+
+  body{
+    background: var(--ink);
+    color: var(--text-on-dark);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    min-height:100vh;
+  }
+
+  a{color: var(--ochre);}
+
+  .wrap{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+
+  header.top{
+    display:flex;
+    flex-direction:column;
+    gap: 6px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 28px;
+  }
+
+  .eyebrow{
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    font-weight: 600;
+  }
+
+  h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(32px, 5vw, 52px);
+    margin: 0;
+    letter-spacing: -0.01em;
+    color: var(--paper);
+  }
+
+  .sub{
+    color: var(--text-dim);
+    font-size: 13px;
+    max-width: 58ch;
+    line-height: 1.6;
+    margin-top: 4px;
+  }
+
+  .sub a{ color: var(--text-dim); text-decoration-color: var(--line); }
+  .sub a:hover{ color: var(--ochre); }
+
+  /* --- search slot --- */
+  .search-row{
+    display:flex;
+    gap: 12px;
+    align-items:center;
+    margin: 28px 0 8px;
+    flex-wrap: wrap;
+  }
+
+  .search-slot{
+    flex: 1 1 320px;
+    position: relative;
+    background: var(--ink-soft);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    display:flex;
+    align-items:center;
+    padding: 0 14px;
+  }
+
+  .search-slot::before{
+    content: "SEARCH";
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+    padding-right: 12px;
+    border-right: 1px solid var(--line);
+    margin-right: 12px;
+  }
+
+  .search-slot input{
+    flex:1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--paper);
+    font-family: inherit;
+    font-size: 14px;
+    padding: 13px 0;
+  }
+
+  .search-slot input::placeholder{ color: var(--text-dim); }
+
+  select#sortSelect{
+    background: var(--ink-soft);
+    border: 1px solid var(--line);
+    color: var(--paper);
+    font-family: inherit;
+    font-size: 12px;
+    padding: 12px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .count-line{
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+  }
+
+  /* --- cards --- */
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 18px;
+  }
+
+  .card{
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 4px;
+    position: relative;
+    padding: 20px 20px 18px;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.4);
+  }
+
+  .card::before{
+    content: attr(data-count) " ITEMS";
+    position:absolute;
+    top: 0;
+    right: 16px;
+    background: var(--ochre);
+    color: var(--ink);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 4px 8px;
+    border-radius: 0 0 3px 3px;
+  }
+
+  .card h3{
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 6px 0 0;
+    line-height: 1.25;
+    padding-right: 70px;
+  }
+
+  .card .desc{
+    font-size: 12.5px;
+    color: #4a4636;
+    line-height: 1.5;
+  }
+
+  .item-list{
+    list-style:none;
+    margin: 4px 0 0;
+    padding: 0;
+    border-top: 1px dashed var(--paper-dim);
+    padding-top: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 190px;
+    overflow-y: auto;
+  }
+
+  .item-list li{
+    display:flex;
+    align-items:baseline;
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .item-list .emoji{ flex: 0 0 auto; }
+  .item-list .name{ font-weight: 600; flex: 0 1 auto; }
+  .item-list .meta{ color: #6b6650; flex: 1 1 auto; text-align:right; font-size: 11px; }
+
+  mark{
+    background: var(--ochre);
+    color: var(--ink);
+    padding: 0 1px;
+    border-radius: 2px;
+  }
+
+  .card-foot{
+    margin-top: 8px;
+    padding-top: 12px;
+    border-top: 1px solid var(--paper-dim);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 11px;
+  }
+
+  .card-foot a{
+    color: var(--ink);
+    background: var(--ochre);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding: 7px 12px;
+    border-radius: 4px;
+    transition: background 0.15s ease, transform 0.1s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  .card-foot a:hover{ background: #e0a24a; text-decoration: none; transform: translateY(-1px); }
+  .card-foot a:active{ transform: translateY(0); }
+
+  .card-foot .src{ color: #8a8468; }
+
+  /* --- states --- */
+  .state{
+    text-align:center;
+    padding: 60px 20px;
+    color: var(--text-dim);
+    font-size: 13px;
+    grid-column: 1 / -1;
+  }
+
+  .state .big{
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: var(--paper);
+    margin-bottom: 6px;
+  }
+
+  .spinner{
+    width: 26px; height: 26px;
+    border: 3px solid var(--line);
+    border-top-color: var(--ochre);
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin{ to{ transform: rotate(360deg); } }
+
+  footer{
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 11px;
+    color: var(--text-dim);
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  footer a{ color: var(--text-dim); }
+  footer a:hover{ color: var(--ochre); }
+
+  @media (prefers-reduced-motion: reduce){
+    .spinner{ animation: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h1>BacklogTracker Templates</h1>
+      <p class="sub">
+        Every template below is from
+        <a href="https://github.com/debojitsantra/BacklogTracker-Templates" target="_blank" rel="noopener noreferrer">BacklogTracker-Templates</a>
+      </p>
+    </header>
+
+    <div class="search-row">
+      <div class="search-slot">
+        <input id="searchInput" type="text" placeholder="template name, description, or entry…" autocomplete="off" />
+      </div>
+      <select id="sortSelect">
+        <option value="az">A → Z</option>
+        <option value="items">Most entries</option>
+      </select>
+    </div>
+    <div class="count-line" id="countLine">Loading…</div>
+
+    <main class="grid" id="grid">
+      <div class="state" id="initialState">
+        <div class="spinner"></div>
+        <div class="big">Fetching…</div>
+      </div>
+    </main>
+
+    <footer>
+      <span>Backlog Tracker Templates</span>
+      <a href="https://github.com/debojitsantra/BacklogTracker" target="_blank" rel="noopener noreferrer">Get the app →</a>
+    </footer>
+  </div>
+
+<script>
+(() => {
+  const GITHUB_OWNER = 'debojitsantra';
+  const GITHUB_REPO = 'BacklogTracker-Templates';
+  const GITHUB_BRANCH = 'main';
+  const DATA_DIR = 'data';
+
+  const CONTENTS_API = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${DATA_DIR}?ref=${GITHUB_BRANCH}`;
+
+  const GENERIC_DESCRIPTIONS = new Set([
+    'shared backlog tracker template'
+  ]);
+
+  const VALID_DAYS = new Set(['mon','tue','wed','thu','fri','sat','sun']);
+
+  const grid = document.getElementById('grid');
+  const countLine = document.getElementById('countLine');
+  const searchInput = document.getElementById('searchInput');
+  const sortSelect = document.getElementById('sortSelect');
+
+  let templates = [];
+
+  function filenameToTitle(name){
+    return name.replace(/\.json$/i, '')
+      .replace(/[-_]+/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase());
+  }
+
+  function pickItemSource(json){
+    for (const key of ['items','subjects','games','work','tasks','categories']){
+      if (json[key] && typeof json[key] === 'object') return json[key];
+    }
+    return null;
+  }
+
+  function normalizeItems(source){
+    if (!source) return [];
+    const entries = Array.isArray(source)
+      ? source.map((it, i) => [it.name || it.title || it.label || `Item ${i+1}`, it])
+      : Object.entries(source);
+
+    const out = [];
+    for (const [fallbackName, item] of entries){
+      if (!item || typeof item !== 'object') continue;
+      const name = String(item.name || item.title || item.label || fallbackName).trim();
+      if (!name) continue;
+
+      const entry = {
+        name,
+        emoji: (item.emoji && String(item.emoji).trim()) || '📌',
+        color: (item.color && String(item.color).trim()) || '#6750a4',
+      };
+
+      const perday = item.perday ?? item.daily_increase;
+      if (typeof perday === 'number') entry.perday = perday;
+      if (typeof item.perday_type === 'string' && item.perday_type.trim()) entry.perday_type = item.perday_type.trim();
+      if (Array.isArray(item.repeat_days)){
+        const days = item.repeat_days.filter(d => VALID_DAYS.has(d));
+        if (days.length) entry.repeat_days = days;
+      }
+      if (typeof item.backlog === 'number') entry.backlog = item.backlog;
+      if (['perday','repeat','none'].includes(item.growth_mode)) entry.growth_mode = item.growth_mode;
+      if (['backlog','todo'].includes(item.completion_mode)) entry.completion_mode = item.completion_mode;
+
+      out.push(entry);
+    }
+    return out;
+  }
+
+  function itemDetails(it){
+    const parts = [];
+    if (it.growth_mode === 'none') parts.push('one-time');
+    else if (typeof it.perday === 'number') parts.push(`${it.perday} ${it.perday_type || 'per day'}`);
+    if (it.repeat_days) parts.push('repeats ' + it.repeat_days.join(', '));
+    if (typeof it.backlog === 'number') parts.push(`backlog ${it.backlog}`);
+    if (it.completion_mode === 'todo') parts.push('todo');
+    return parts.join(' · ') || '—';
+  }
+
+  async function buildTemplate(file){
+    if (!file.download_url || !file.name.toLowerCase().endsWith('.json')) return null;
+    const res = await fetch(file.download_url, { cache: 'no-store' });
+    if (!res.ok) return null;
+    const json = await res.json();
+
+    const items = normalizeItems(pickItemSource(json));
+    if (!items.length) return null;
+
+    let description = (json.description || '').trim();
+    if (GENERIC_DESCRIPTIONS.has(description.toLowerCase())) description = '';
+
+    const title = (json.title || json.name || json.template_name || json.course_name || '').trim() || filenameToTitle(file.name);
+
+    return {
+      id: file.path,
+      filename: file.name,
+      title,
+      description,
+      items,
+      raw_url: file.download_url,
+      source_url: file.html_url,
+    };
+  }
+
+  function escapeHtml(str){
+    return str.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function highlight(text, query){
+    const safe = escapeHtml(text);
+    if (!query) return safe;
+    const idx = safe.toLowerCase().indexOf(query.toLowerCase());
+    if (idx === -1) return safe;
+    return safe.slice(0, idx) + '<mark>' + safe.slice(idx, idx + query.length) + '</mark>' + safe.slice(idx + query.length);
+  }
+
+  function renderCard(t, query){
+    const itemsHtml = t.items.map(it => `
+      <li>
+        <span class="emoji">${escapeHtml(it.emoji)}</span>
+        <span class="name">${highlight(it.name, query)}</span>
+        <span class="meta">${escapeHtml(itemDetails(it))}</span>
+      </li>
+    `).join('');
+
+    return `
+      <article class="card" data-count="${t.items.length}">
+        <h3>${highlight(t.title, query)}</h3>
+        ${t.description ? `<p class="desc">${highlight(t.description, query)}</p>` : ''}
+        <ul class="item-list">${itemsHtml}</ul>
+        <div class="card-foot">
+          <a href="${t.raw_url}" download="${t.filename}">⬇ Download</a>
+          <span class="src">${escapeHtml(t.filename)}</span>
+        </div>
+      </article>
+    `;
+  }
+
+  function render(){
+    const query = searchInput.value.trim();
+    const q = query.toLowerCase();
+
+    let filtered = templates;
+    if (q){
+      filtered = templates.filter(t =>
+        t.title.toLowerCase().includes(q) ||
+        t.description.toLowerCase().includes(q) ||
+        t.items.some(it => it.name.toLowerCase().includes(q))
+      );
+    }
+
+    const sorted = [...filtered].sort((a, b) => {
+      if (sortSelect.value === 'items') return b.items.length - a.items.length || a.title.localeCompare(b.title);
+      return a.title.localeCompare(b.title);
+    });
+
+    countLine.textContent = `${sorted.length} of ${templates.length} template${templates.length === 1 ? '' : 's'}`;
+
+    if (sorted.length === 0){
+      grid.innerHTML = `<div class="state"><div class="big">No matches</div><div>Try a different template or entry name.</div></div>`;
+      return;
+    }
+
+    grid.innerHTML = sorted.map(t => renderCard(t, query)).join('');
+  }
+
+  async function load(){
+    try{
+      const res = await fetch(CONTENTS_API, { headers: { Accept: 'application/vnd.github+json' } });
+      if (!res.ok) throw new Error(`GitHub request failed: ${res.status}`);
+      const files = await res.json();
+
+      const jsonFiles = files.filter(f => f.type === 'file' && f.name.toLowerCase().endsWith('.json'));
+      const built = await Promise.all(jsonFiles.map(buildTemplate));
+      templates = built.filter(Boolean);
+
+      render();
+    } catch (err){
+      console.warn('Failed to load templates:', err);
+      grid.innerHTML = `<div class="state"><div class="big">Couldn't reach GitHub</div><div>${escapeHtml(String(err.message || err))}</div></div>`;
+      countLine.textContent = '';
+    }
+  }
+
+  searchInput.addEventListener('input', render);
+  sortSelect.addEventListener('change', render);
+
+  load();
+})();
+</script>
+</body>
+</html>
